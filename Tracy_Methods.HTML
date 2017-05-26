@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Basic Web Page of my Favorite Places to Eat</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Tracystyle.css">
+  <body>
+    <header>
+      <h1 id = "Heading"> Places to Eat</h1>
+      <div>
+        <ul id ="list">
+          <li>Skyline Chili</li>
+          <li>Pizza Hut</li>
+          <li>McDonald</li>
+          <li>Red Jar</li>
+          <li>Bakersfield</li>
+          <li>Pslomino</li>
+          <li>Spaghetti Factory</li>
+        </ul>
+        <a href="https://www.tripadvisor.com/Restaurants-g50322-Fairfield_Butler_County_Ohio.html">A link to 10 places to eat"></a>
+        <div>
+          <p>Check out some of the best places to eat in Indy:</p>
+          <img src="file:///C:/Users/n0244306/Pictures/Big.jpg"; alt="Hamburger" id = "myBurger">
+          <div>
+            <div>
+              <div>
+                <a id="my_element" href="http://www.bakersfieldtacos.com/">Bakersfiled Website</a>
+                <p> Marcus M. said Bakersfiled has the margaritas and tacos are out of this delicious!
+                  Crazy good!Intensely intoxicating in all the best ways. Anytime someone suggest margaritas and doesn't suggest
+                  BakersField in the same sentence I'm automatically disgusted and question why we are friends or even speaking
+                  to each other for that matter... Review******</p>
+                  <div id="color"style="backgroundImage:url('file:///C:/Users/n0244306/Documents/Background.html');border:1px solid black;height:400px;width:400px;">This is a div element.</div>
+
+                  <img src="file:///C:/Users/n0244306/Pictures/Taco.jpg" rel="Taco" id= "myTaco">
+                  <script type="text/javascript">
+                  var myVariable = document.getElementById("Heading");
+                  var myNewListItem = document.createElement("li");
+                  var myList = document.getElementById("list");
+                  var myimage = document.getElementById("myBurger");
+                  var mylinkAttribute =myimage.getAttribute("alt")
+                  var mylink = document.getElementById("my_element")
+                  //var myimage = document.getElementById("myTaco");
+                  //var mylinkAttribute =myimage.getAttribute("rel")
+                  //  var mybackground = document.body.style.backgroundImage = "url('file:///C:/Users/n0244306/Documents/Background.html')";
+                  myNewListItem.innerHTML="My New Place";
+                  myList.appendChild(myNewListItem);
+                  console.log(mylinkAttribute);
+                  myList.removeChild(myList.firstElementChild);
+                  mylink.style.display = "block";
+                  mylink.style.backgroundColor = "#f00";
+                  mylink.style.border = "solid 1px #00f";
+                  //  myimage.style.border = "20px"
+                  //  mybackground.stye.backgroundImage =
+                  function HeyTracy() {
+                    alert ("Whazzz Up");
+                    alert ("GoodBye");
+                    alert("Wait");
+                  }
+                  myimage.addEventListener("click",HeyTracy);
+
+                // function ChangeColors() {
+                    var i = 0;
+                    var id = setInterval(function(){
+                    var r =Math.floor(Math.random()*256);
+                    var g = Math.floor(Math.random()*256);
+                    var b = Math.floor(Math.random()*256);
+                    document.body.style.backgroundColor = 'rgb('+r+','+g+','+b+')' ;
+                    i++;
+                  console.log(i);
+                  if(i > 5){
+                    clearInterval(id);
+                  }
+                  }      ,300);
+
+                  </script>
+                </body>
+              </head>
+              </html>

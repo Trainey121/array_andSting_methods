@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example of Array Join</title>
+  </head>
+  <body>
+    <button onclick="myRainbow()">Choose a Color</button>
+    <p id="demo"></p>
+    <script type="text/javascript">
+    function myRainbow () {
+  var colors = ["red", "orange", "purple", "navy"];
+  var x = document.getElementById("demo");
+  x.innerHTML = colors.join(" and ");
+}
+    </script>
+  </body>
+</html>
